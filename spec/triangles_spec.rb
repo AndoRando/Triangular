@@ -11,5 +11,9 @@ describe(Triangle) do
       test_triangle = Triangle.new(3, 3, 3)
       expect(test_triangle.triangular?()).to(eq(1))
     end
+    it("return 2 if it is an isosceles triangle") do
+      test_triangle = Triangle.new(2, 2, 3)
+      expect(test_triangle.triangular?()).to(eq(2))
+    end
   end
 end

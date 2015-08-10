@@ -14,7 +14,7 @@ class Triangle
     if (@triarray[0] + @triarray [1]).>=(@triarray[2])
       if @triarray.uniq().count() == 1
         1
-      elsif
+      elsif @triarray.uniq().count() == 2
         2
       else
         3
