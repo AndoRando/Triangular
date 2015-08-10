@@ -7,7 +7,7 @@ class Triangle
     @triarray.sort!()
   end
 
-  define_method(:triangular?) do
+  define_method(:triangular) do
 
     ## Triangle Legend
     #  0 = Go home triangle, you're drunk (and not even a triangle)

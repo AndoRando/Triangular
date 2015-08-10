@@ -1,0 +1,13 @@
+<h1>Triangular or not?</h1>
+
+<% if @triangularity.triangular() == 0 %>
+  <p>Go home triangle, you're drunk! (and you're not even a triangle)</p>
+<% elsif @triangularity.triangular() == 1 %>
+  <p>Your triangle is equilateral and super special!</p>
+<% elsif @triangularity.triangular() == 2 %>
+  <p>Your triangle is isosceles and kinda neat!</p>
+<% elsif @triangularity.triangular() == 3 %>
+  <p>Your tirangle is a dirty scalene commoner!</p>
+<% else %>
+  <p>Something went wrong, go back before it finds you!</p>
+<% end %>
