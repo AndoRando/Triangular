@@ -20,7 +20,7 @@ class Triangle
         3
       end
     else
-      false
+      0
     end
   end
 end
