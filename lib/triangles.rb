@@ -7,10 +7,12 @@ class Triangle
     @triarray.sort!()
   end
 
-## Triangle Legend
-#  1 = Equilateral, 2 = Isosceles, 3 = Scalene
-
   define_method(:triangular?) do
+
+    ## Triangle Legend
+    #  0 = Go home triangle, you're drunk (and not even a triangle)
+    #  1 = Equilateral, 2 = Isosceles, 3 = Scalene
+
     if (@triarray[0] + @triarray [1]).>=(@triarray[2])
       if @triarray.uniq().count() == 1
         1
